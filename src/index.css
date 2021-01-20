@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+.showcase {
+  height: 500px;
+  background: url('./images/hero_599.webp') no-repeat center/cover;
+}
+
+.showcase .overlay {
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+  .showcase {
+    height: 600px;
+    background: url('./images/hero_1600.webp') no-repeat center/cover;
+  }
+
+  .showcase .overlay {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    height: 600px;
+    background: url('./images/home_of_football_1.webp') no-repeat center/cover;
+  }
+
+  .home .overlay {
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.discover h4 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
